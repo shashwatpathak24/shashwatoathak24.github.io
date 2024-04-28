@@ -47,7 +47,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
   ///MENU ICON NAVBAR//
-  let menuIcon=document.querySelector('#menu-Icon');
+  let menuIcon=document.querySelector('#menu-icon');
   let navbar= document.querySelector('.navbar');
 
   menuIcon.onclick=() =>{
@@ -79,27 +79,27 @@ ScrollReveal().reveal('.home-content h3,home-content p, .about-content', { origi
 
 
 //////////MODAL FOR OPENING LINKS///////////////////
-const serviceModals = document.querySelectorAll(".service-modal");
-const learnmoreBtns = document.querySelectorAll(".read-more-btn");
-const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+// const serviceModals = document.querySelectorAll(".service-modal");
+// const learnmoreBtns = document.querySelectorAll(".read-more-btn");
+// const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
 
-var modal = function (modalClick) {
-    serviceModals[modalClick].classList.add("active");
-}
+// var modal = function (modalClick) {
+//     serviceModals[modalClick].classList.add("active");
+// }
 
-learnmoreBtns.forEach((learnmoreBtn, i) => {
-    learnmoreBtn.addEventListener("click", () => {
-        modal(i);
-    })
-});
+// learnmoreBtns.forEach((learnmoreBtn, i) => {
+//     learnmoreBtn.addEventListener("click", () => {
+//         modal(i);
+//     })
+// });
 
-modalCloseBtns.forEach((modalCloseBtn) => {
-    modalCloseBtn.addEventListener("click", () => {
-        serviceModals.forEach((modalView) => {
-            modalView.classList.remove("active");
-        });
-    });
-});
+// modalCloseBtns.forEach((modalCloseBtn) => {
+//     modalCloseBtn.addEventListener("click", () => {
+//         serviceModals.forEach((modalView) => {
+//             modalView.classList.remove("active");
+//         });
+//     });
+// });
 
 
 

@@ -94,7 +94,7 @@ header{
  }
 
  #menu-icon{
-    size: 3.6rem;
+    font-size: 3.6rem;
     color: var(--text-color);
     display: none;
  }
@@ -587,12 +587,18 @@ span{
    outline-color: var(--white-color);
 }
 
-/* -----------MEDIA QUERY------------------
-@media(max-width:1200px){
+
+
+
+
+
+
+/* / -----------MEDIA QUERY------------------ */
+@media (max-width:1200px){
     html{
         font-size: 55%;
     }
-    .home.profession-container{
+    .home .profession-container{
         height: 85.8rem;
     }
     .home .profession-container .profession-box{
@@ -603,14 +609,15 @@ span{
         right: -9rem;
     }
 }
+
 @media(max-width:1024px){
     .header{
         padding:2rem 3%;
     }
     section{
-        padding:10rem 3%;
+        padding:10rem 3% 2rem; 
     }
-    .home .profession-container .portfolio-box{
+    .home .profession-container .profession-box{  /* Check*/
         right:-22rem;
     }
     .home .profession-container .overlay{
@@ -618,10 +625,10 @@ span{
     }
 }
 
-@media(max-width:991px){
+@media (max-width:991px){
 
     .navbar a:nth-child(1),
-    .navbar a:nth-child(1){
+    .navbar a:nth-child(2){
         color: var(--main-color);
     }
     .navbar a.active::before{
@@ -632,7 +639,7 @@ span{
     .home .home-content{
         max-width: 50rem;
     }
-    .home .profession-container .portfolio-box{
+    .home .profession-container .profession-box{
         right:-45rem;
     }
     .home .profession-container .overlay{
@@ -641,7 +648,8 @@ span{
     .home-img img{
         display:none;
     }
-    .services,.portfolio{
+    .services,
+    .portfolio{
         padding-bottom: 7rem;
     }
     .contact{
@@ -653,7 +661,7 @@ span{
 }
 
 
-@media(max-width:768px){
+@media (max-width:768px){
     #menu-icon{
         display: block;
     }
@@ -673,10 +681,10 @@ span{
         padding:1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0,0,0,0.2);
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
         display: none;
     }
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
 
@@ -686,7 +694,8 @@ span{
         margin: 3rem 0;
         color: var(--text-color);
     }
-    .navbar a:nth-child(1),.navbar a:nth-child(2){
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
         color: var(--text-color);
     }
     .navbar a.active{
@@ -714,6 +723,7 @@ span{
         width: 100%;
         height: 100%;
     }
+
     .home .profession-container .profession-box{
         position: fixed;
         top: 60%;
@@ -722,14 +732,14 @@ span{
         width: 100%;
     }
     .home .profession-box .profession{
-        padding: 0;
+        padding: 0 13px;
         left:auto;
         transform-origin: 0;       
     }
     .home .profession-box .profession:nth-child(1){
         transform: rotate(-90deg) translate(-120px,-210px);
     }
-
+ 
     .home .profession-box .profession:nth-child(1) i {
         margin-right: 0;
     }
@@ -755,7 +765,7 @@ span{
         top:70rem;
         left: 50%;
         right: 0;
-        transform: rotate(90deg) translate(-50%,50%);
+        transform: rotate(90deg) translate(-50%,50%) scaleY(3);
         border-width: 23.9rem;
     }
     .about{
@@ -769,10 +779,11 @@ span{
         width: 70vw;
         margin-top: -2rem;
     }
-    .services h2, .portfolio h2{
+    .services h2,
+    .portfolio h2{
         margin-bottom: 3rem;
     } 
-    .portfolio.portfolio-container{
+    .portfolio .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -788,17 +799,18 @@ span{
     }  
 }
 
-@media(max-width: 617px){
+@media (max-width: 617px){
     .portfolio .portfolio-container{
      grid-template-columns: 1fr;
     }
 }
+
 @media(max-width: 450px){
     html{
         font-size: 50%;
     }
     #darkMode-icon{
-        font-size: 6rem;
+        right: 6rem;
     }
     .home{
         padding:0 3% 30rem;
@@ -809,7 +821,7 @@ span{
     .home .profession-box .profession:nth-child(2){
         transform: rotate(0deg) translate(5px,-335px);
     }
-    .home .profession-box .profession:nth-child(1){
+    .home .profession-box .profession:nth-child(3){
         transform: rotate(90deg) translate(-105px,-440px);
     }
     .home .profession-box .profession:nth-child(4){
@@ -829,7 +841,6 @@ span{
     .footer p{
         text-align: center;
         margin-top: 2rem;
-    }  
-     
-} */
+    }       
+} 
 
